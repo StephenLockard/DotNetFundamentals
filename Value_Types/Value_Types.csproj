@@ -57,6 +57,7 @@
     <Compile Include="ThanksgivingTests.cs" />
     <Compile Include="CalculatorTests.cs" />
     <Compile Include="InsuranceChallengeTests.cs" />
+    <Compile Include="BakeryTests.cs" />
     <Compile Include="Value_Types.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -64,6 +65,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BakeryChallenge\BakeryChallenge.csproj">
+      <Project>{593885DB-92EB-401A-AE1E-F77DB603207B}</Project>
+      <Name>BakeryChallenge</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Calculator_Repository\Calculator_Repository.csproj">
       <Project>{98912BC4-9328-4EFF-8089-1BA5F2796EC5}</Project>
       <Name>Calculator_Repository</Name>

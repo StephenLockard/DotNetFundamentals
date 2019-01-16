@@ -4,14 +4,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{752824FC-DE1B-4119-8067-1E6FFB4468A8}</ProjectGuid>
+    <ProjectGuid>{593885DB-92EB-401A-AE1E-F77DB603207B}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Insurance_Challenge</RootNamespace>
-    <AssemblyName>Insurance_Challenge</AssemblyName>
+    <RootNamespace>BakeryChallenge</RootNamespace>
+    <AssemblyName>BakeryChallenge</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -43,11 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Customer.cs" />
+    <Compile Include="Product.cs" />
+    <Compile Include="ProductRepository.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="ProgramUI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Vehicle.cs" />
-    <Compile Include="Vehicle_Repository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

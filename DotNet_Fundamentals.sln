@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoopExamples", "LoopExample
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testDoNotSave", "testDoNotSave\testDoNotSave.csproj", "{98877725-510D-49B5-810D-2BDA58BDDC6C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BakeryChallenge", "BakeryChallenge\BakeryChallenge.csproj", "{593885DB-92EB-401A-AE1E-F77DB603207B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{98877725-510D-49B5-810D-2BDA58BDDC6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{98877725-510D-49B5-810D-2BDA58BDDC6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{98877725-510D-49B5-810D-2BDA58BDDC6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{593885DB-92EB-401A-AE1E-F77DB603207B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{593885DB-92EB-401A-AE1E-F77DB603207B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{593885DB-92EB-401A-AE1E-F77DB603207B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{593885DB-92EB-401A-AE1E-F77DB603207B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
