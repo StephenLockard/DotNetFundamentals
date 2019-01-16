@@ -6,43 +6,35 @@ using System.Threading.Tasks;
 
 namespace Insurance_Challenge
 {
-    public class CarRepo
+    public class VehicleRepository
     {
-        public decimal InsuranceCost(Vehicle car) //(Vehicle // car ) = (reference type // name)
+        private List<Vehicle> _vehicleList = new List<Vehicle>();
+
+        public void AddVehicleToList(Vehicle newVehicle)
         {
-            decimal totalCost = 0m;
+            _vehicleList.Add(newVehicle);
 
-            if (car.Year > 1960 && car.Year <= 1970)
-            {
-                totalCost = 50m;
-            }
-
-            else if (car.Year > 1970 && car.Year <= 1980)
-            {
-                totalCost = 50m;
-            }
-            else if (car.Year > 1980 && car.Year <= 1991)
-            {
-                totalCost = 150m;
-            }
-            else
-            {
-                totalCost = 200m;
-            }
-
-            return totalCost;
         }
-
-        List<Vehicle> listOfCars = new List<Vehicle>();
-
-        public void AppendToList(Vehicle car)
+        public List<Vehicle> GetVehicleList()
         {
-            listOfCars.Add(car);
+            return _vehicleList;
+
         }
-
-        public List<Vehicle> GetListOfCars()
+        public decimal CalculateVehiclePremium(Vehicle vehicle)
         {
-            return listOfCars;
+            decimal premium = 0m;
+            if (vehicle.Mileage > 50000 && vehicle.Mileage < 100000)
+            {
+                premium = 25.00m;
+
+            }
+            else if (vehicle.Mileage >= 100000)
+            {
+
+                premium = 50.00m;
+            }
+            return premium;
+
         }
     }
 }
